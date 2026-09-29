@@ -1,0 +1,236 @@
+/* ================================
+   PAGE
+================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #87d9eb;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+
+/* ================================
+   WINDOWS
+================================ */
+
+.window {
+  width: 80%;
+  margin: 0 auto 30px auto;
+  border: 2px solid #333;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.window-header {
+  height: 45px;
+  padding: 0 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #4aa3a0;
+  color: white;
+
+  font-weight: bold;
+}
+
+
+/* ================================
+   EXPAND BUTTON
+================================ */
+
+.expand-button {
+  border: none;
+  background: transparent;
+
+  color: white;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  padding: 4px 8px;
+}
+
+.expand-button:hover {
+  transform: scale(1.15);
+}
+
+
+/* ================================
+   EDITOR
+================================ */
+
+#editor {
+  display: block;
+
+  width: 100%;
+  min-height: 200px;
+
+  border: none;
+  outline: none;
+
+  padding: 15px;
+
+  resize: vertical;
+
+  font-family: monospace;
+  font-size: 15px;
+}
+
+
+/* ================================
+   PREVIEW
+================================ */
+
+#preview {
+  min-height: 350px;
+
+  padding: 15px;
+
+  overflow-y: auto;
+}
+
+
+/* ================================
+   COMPACT PREVIEW
+================================ */
+
+#preview h1 {
+  margin: 5px 0 10px;
+}
+
+#preview h2 {
+  margin: 8px 0;
+}
+
+#preview h3 {
+  margin: 8px 0;
+}
+
+#preview p {
+  margin: 6px 0;
+}
+
+#preview ul,
+#preview ol {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+#preview li {
+  margin: 2px 0;
+}
+
+#preview blockquote {
+  margin: 8px 0;
+  padding: 5px 15px;
+}
+
+#preview pre {
+  background: rgb(178, 213, 240);
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin: 10px 0;
+  overflow-x: auto;
+}
+
+#preview code {
+  background: white;
+}
+
+#preview a {
+  color: #0066cc;
+}
+
+
+/* ================================
+   FREECODECAMP LOGO
+================================ */
+
+#preview img {
+  display: block;
+
+  width: 350px;
+  max-width: 100%;
+
+  height: auto;
+
+  margin: 15px auto;
+}
+
+
+/* ================================
+   EXPANDED WINDOW
+================================ */
+
+.expanded-window {
+  position: relative !important;
+
+  width: 80% !important;
+
+  height: 80vh !important;
+
+  margin: 0 auto 30px auto !important;
+
+  z-index: 10;
+
+  background: white;
+
+  display: flex !important;
+  flex-direction: column;
+}
+
+
+/* ================================
+   EXPANDED EDITOR
+================================ */
+
+.expanded-window #editor {
+  flex: 1;
+
+  height: auto;
+  min-height: 0;
+
+  resize: none;
+}
+
+
+/* ================================
+   EXPANDED PREVIEW
+================================ */
+
+.expanded-window #preview {
+  flex: 1;
+
+  height: auto;
+  min-height: 0;
+
+  overflow-y: auto;
+}
+
+
+/* ================================
+   HIDE OTHER WINDOW
+================================ */
+
+.hidden-window {
+  display: none !important;
+}
